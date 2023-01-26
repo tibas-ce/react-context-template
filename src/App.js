@@ -1,9 +1,11 @@
 import Router from "./routes/Router";
+import GlobalState from "./contexts/GlobalState";
 
 export default function App() {
-  return (
-    <>
+  
+    return (
+    <GlobalState>
       <Router />
-    </>
+    </GlobalState>
   );
 }
